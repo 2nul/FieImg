@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#09101f" />
+  <title>fieimg — image upload, simplified</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main>
+    <nav><a class="brand" href="/"><span>✦</span> fieimg</a><span class="pill">free · no account</span></nav>
+    <section class="hero">
+      <h1>Drop an image.<br><em>Get a link.</em></h1>
+      <p class="intro">Drop your image here and let us handle the rest. Permanent hosting, no signup required.</p>
+    </section>
+    <section class="uploader" id="dropzone" aria-label="Image upload area">
+      <input id="file" type="file" accept="image/jpeg,image/png,image/gif,image/webp" />
+      <div class="orb">↑</div>
+      <h2>Drop your image here</h2>
+      <p>or <button id="choose" type="button">choose from your device</button></p>
+      <small>JPG, PNG, GIF, WebP · up to 32 MB</small>
+    </section>
+    <section class="result" id="result" hidden>
+      <div class="success">✓</div><div><p>Your image is ready</p><code id="link"></code></div>
+      <button id="copy" type="button">Copy link</button>
+    </section>
+    <p class="status" id="status" role="status"></p>
+    <footer><span>fast · private · permanent</span><a class="github" href="https://github.com/2nul/FieImg" target="_blank" rel="noreferrer" aria-label="View FieImg on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.8 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.4-5.5-6a4.7 4.7 0 0 1 1.3-3.3c-.1-.3-.6-1.6.1-3.3 0 0 1.1-.4 3.5 1.3a12 12 0 0 1 6.4 0c2.4-1.7 3.5-1.3 3.5-1.3.7 1.7.3 3 .1 3.3a4.7 4.7 0 0 1 1.3 3.3c0 4.6-2.8 5.7-5.5 6 .4.4.8 1 .8 2v3c0 .3.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"/></svg><span>GitHub</span></a></footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
