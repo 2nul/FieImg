@@ -1,6 +1,6 @@
 ## FieImg
 
-- Fast, permanent image hosting with no account required
+- Upload images for free and quickly, permanently, simply, no account required. Based on the ImgBB API. This was created for the purpose of me uploading image quickly and for fun, feel free to use it :D
 ### Website:
 - https://fmg.2nul.dpdns.org (New)
 - https://fieimg.2nul.dpdns.org
